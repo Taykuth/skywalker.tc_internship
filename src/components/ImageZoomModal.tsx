@@ -18,6 +18,7 @@ export default function ImageZoomModal({ imageUrl, alt, onClose }: ImageZoomModa
       <DialogContent className="max-w-[90vw] max-h-[90vh] p-2">
         <DialogTitle className="sr-only">Görsel Önizleme</DialogTitle>
         {imageUrl && (
+          /* eslint-disable-next-line @next/next/no-img-element */
           <img
             src={imageUrl}
             alt={alt || "Büyütülmüş görsel"}

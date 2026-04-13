@@ -60,6 +60,7 @@ export default function ImagePreviewCard({
               className="relative aspect-square bg-muted rounded-lg overflow-hidden cursor-zoom-in border"
               onClick={() => onZoom(product.originalImageUrl)}
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={product.originalImageUrl}
                 alt={`${product.name} - orijinal`}
@@ -126,6 +127,7 @@ function GeneratedImageVariant({
         className="relative aspect-square bg-muted cursor-zoom-in"
         onClick={onZoom}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={image.generatedUrl}
           alt={`${productName} - üretilen`}

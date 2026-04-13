@@ -4,10 +4,9 @@ import { useState, useEffect, useCallback } from "react";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import ImagePreviewCard from "@/components/ImagePreviewCard";
 import ImageZoomModal from "@/components/ImageZoomModal";
-import type { Product, GeneratedImage } from "@/types";
+import type { Product } from "@/types";
 import {
   fetchGeneratedProducts,
   updateImageStatus,
